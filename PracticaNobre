@@ -1,0 +1,19 @@
+import json
+
+
+def Separacion_Caracteres(archivo):
+    with open(archivo, 'r') as f:
+        contenido = f.read()
+
+    for caracter in contenido:
+        if caracter == '\n':
+            print("[ENTER]")
+        elif caracter == ' ':
+            print("[ESPACIO]")
+        else:
+            print(caracter)
+
+
+archivo_json = "Nombre.json"
+
+Separacion_Caracteres(archivo_json)
